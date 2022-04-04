@@ -1,0 +1,39 @@
+.newsletter--container{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color:var(--color-black);
+    border:1px solid var(--color-golden);
+    text-align:center;
+   
+}
+
+
+.newsletter-subtitle{
+    margin:2rem 0;
+}
+
+.newsletter-input{
+    width:100%;
+}
+
+.newsletter-form{
+    background-color:var(--color-black);
+    color:#fff;
+    font-family:var(--font-base);
+    font-size:1rem;
+    padding:1rem;
+    border:1px solid #fff;
+    width:100%;
+    max-width:500px;
+    margin-right:1rem;
+
+}
+
+
+.newsletter-form::placeholder{
+    font-family:var(--font-base);
+    font-size:1rem;
+}

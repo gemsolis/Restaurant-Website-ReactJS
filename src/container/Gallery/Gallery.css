@@ -1,0 +1,178 @@
+.photoGallery--container{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+
+
+.photoGallery--header{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    max-width:300px;
+    padding-right:3rem;
+}
+
+.photoGallery--header p{
+    margin:10px 0;
+}
+
+.photoGallery--slides{
+    max-width:75%;
+    display:flex;
+    flex-direction:row;
+    position:relative;
+}
+
+.images-container{
+    display:flex;
+    flex-direction:row;
+    align-items:flex-start;
+    width:max-content;
+    overflow-x:scroll;
+    -ms-overflow-style:none;
+    scrollbar-width:none;
+  
+}
+
+.images-container::-webkit-scrollbar{
+    display:none;
+}
+
+.images-card{
+    position:relative;
+    min-width:300px;
+    height:450px;
+    margin-right:1.5rem;
+}
+
+.gallery-overlay{
+    position:absolute;
+    color:#fff;
+    font-size:2.5em;
+    opacity:0.5;
+    transition:0.5s ease;
+    cursor:pointer;
+
+}
+
+.images-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:1;
+    transition:0.5s ease;
+    cursor:pointer;
+
+}
+
+
+
+
+.images-card:hover img{
+    opacity:0.40;
+    
+
+}
+
+.images-card:hover .gallery-overlay{
+    opacity:1;
+
+}
+
+
+.slides-arrows{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 1rem;
+    position:absolute;
+    bottom:5%;
+
+}
+
+
+.slides-icon{
+    color:var(--color-golden);
+    font-size:2rem;
+    background-color:var(--color-black);
+    border-radius:10px;
+    cursor:pointer;
+
+}
+
+
+
+@media screen and (max-width:2000px){
+
+    .photoGallery--header{
+        max-width:1000px;
+    }
+
+    .photoGallery--slides{
+        max-width:70%;
+    }
+
+    .images-card{
+        min-width:500px;
+        height:600px;
+        margin-right:1rem;
+   
+    }
+}
+
+
+@media screen and (max-width:1024px){
+
+
+    .photoGallery--slides{
+        max-width:70%;
+    }
+
+    .images-card{
+        min-width:350px;
+        height:450px;
+        margin-right:1rem;
+   
+    }
+}
+
+@media screen and (max-width:850px){
+    .photoGallery--container{
+        flex-direction:column;
+    }
+
+    .photoGallery--header{
+        text-align:center;
+        max-width:400px;
+        align-items:center;
+        padding:3rem 0;
+    }
+
+    .photoGallery--slides{
+        max-width:100%;
+    }
+
+    .images-card{
+        min-width:250px;
+        height:450px;
+        margin-right:1rem;
+   
+    }
+}
+
+@media screen and (max-width:320px){
+    .photoGallery--slides{
+        max-width:130%;
+    }
+
+    .images-card{
+        min-width:250px;
+        height:450px;
+        margin-right:1rem;
+   
+    }
+}
+

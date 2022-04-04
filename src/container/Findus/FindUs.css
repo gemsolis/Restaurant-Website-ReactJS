@@ -1,0 +1,45 @@
+.findUs--container{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+
+}
+
+.findUs--info{
+    margin-right:5rem;
+}
+
+
+.findUs-address{
+    color:var(--color-grey);
+    margin:50px 0;
+}
+
+.findUs-openinghours{
+    color:#fff;
+}
+
+.findUs-hourtitle{
+    margin:10px 0;
+}
+
+.findUs-img{
+    width:100%;
+    max-width:500px;
+    
+}
+
+
+@media screen and (max-width:650px){
+    .findUs--container{
+        flex-direction:column;
+        align-items:center;
+    
+    }
+
+    .findUs-img{
+        margin:3rem 0;
+        
+    }
+}
